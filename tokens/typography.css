@@ -1,0 +1,59 @@
+/* ============================================================
+   PHOSPHOROUS — Typography tokens
+   Space Grotesk for display/UI · JetBrains Mono for terminal/code
+   System stack for long-form body copy.
+   Headings are tight (-0.02em) and heavy; mono is loose & uppercased.
+   ============================================================ */
+
+:root {
+  /* --- Families --- */
+  --font-heading: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  --font-mono:    'JetBrains Mono', 'Courier New', ui-monospace, monospace;
+  --font-body:    system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  /* --- Weights --- */
+  --weight-regular:  400;
+  --weight-medium:   500;
+  --weight-semibold: 600;
+  --weight-bold:     700;
+  --weight-black:    900;  /* hero glitch headline */
+
+  /* --- Type scale (rem) --- */
+  --text-2xs:  0.65rem;   /* system micro-labels */
+  --text-xs:   0.75rem;   /* mono chips, tags */
+  --text-sm:   0.875rem;  /* secondary UI, terminal input */
+  --text-base: 1rem;      /* body */
+  --text-lg:   1.125rem;  /* lead paragraph */
+  --text-xl:   1.25rem;
+  --text-2xl:  1.5rem;
+  --text-3xl:  1.875rem;
+  --text-4xl:  2.25rem;   /* section headings */
+  --text-5xl:  3rem;      /* large section headings */
+  --text-7xl:  4.5rem;
+  --text-9xl:  8rem;      /* hero "THIS. IS." */
+
+  /* --- Line heights --- */
+  --leading-tight: 1.1;   /* headings */
+  --leading-snug:  1.4;
+  --leading-body:  1.6;   /* default */
+  --leading-loose: 1.8;   /* lead paragraphs */
+
+  /* --- Letter spacing --- */
+  --tracking-tight:  -0.02em;  /* headings */
+  --tracking-normal: 0;
+  --tracking-mono:   0.08em;   /* mono chips */
+  --tracking-wide:   0.12em;   /* status readouts */
+  --tracking-widest: 0.15em;   /* section labels */
+  --tracking-hero:   0.3em;    /* CRT subtitle */
+
+  /* ============================================================
+     SEMANTIC TYPE ROLES
+     ============================================================ */
+  --type-display:  var(--weight-black) var(--text-9xl)/var(--leading-tight) var(--font-heading);
+  --type-h1:       var(--weight-bold) var(--text-5xl)/var(--leading-tight) var(--font-heading);
+  --type-h2:       var(--weight-bold) var(--text-4xl)/var(--leading-tight) var(--font-heading);
+  --type-h3:       var(--weight-semibold) var(--text-xl)/var(--leading-snug) var(--font-heading);
+  --type-body:     var(--weight-regular) var(--text-base)/var(--leading-body) var(--font-body);
+  --type-lead:     var(--weight-regular) var(--text-lg)/var(--leading-loose) var(--font-body);
+  --type-mono:     var(--weight-regular) var(--text-xs)/var(--leading-snug) var(--font-mono);
+}

@@ -1,0 +1,20 @@
+<!-- @dsCard group="Brand" viewport="700x180" name="Glow Shadows" subtitle="Neon bloom rendered as box-shadow — never a flat drop shadow" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin:0; background:var(--color-bg); padding:30px 24px; display:flex; gap:22px; align-items:center; justify-content:space-around; }
+  .orb { width:70px; height:70px; border-radius:50%; display:flex; align-items:flex-end; justify-content:center; padding-bottom:8px; }
+  .t { font-family:var(--font-mono); font-size:9px; color:rgba(255,255,255,.85); letter-spacing:.05em; }
+</style>
+</head>
+<body>
+  <div class="orb" style="background:var(--color-cyan);box-shadow:var(--glow-cyan)"><span class="t" style="color:#05050a">cyan</span></div>
+  <div class="orb" style="background:var(--color-primary);box-shadow:var(--glow-primary)"><span class="t">primary</span></div>
+  <div class="orb" style="background:var(--color-red);box-shadow:var(--glow-red)"><span class="t">red</span></div>
+  <div class="orb" style="background:var(--color-pink);box-shadow:var(--glow-pink)"><span class="t">pink</span></div>
+  <div class="orb" style="background:var(--color-purple);box-shadow:var(--glow-purple)"><span class="t">purple</span></div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!-- @dsCard group="Colors" viewport="700x150" name="Brand Accents" subtitle="Azure blue (structural) + electric cyan (the phosphor glow)" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin:0; background:var(--color-bg); padding:20px; }
+  .row { display:flex; gap:12px; }
+  .sw { flex:1; height:96px; border-radius:var(--radius-lg);
+        display:flex; flex-direction:column; justify-content:flex-end; padding:10px; }
+  .sw .name { font-family:var(--font-mono); color:#fff; font-size:11px; letter-spacing:.04em; }
+  .sw .hex { font-family:var(--font-mono); color:rgba(255,255,255,.65); font-size:10px; letter-spacing:.05em; }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div class="sw" style="background:var(--color-primary)"><span class="name">primary</span><span class="hex">#0078d4 · Azure</span></div>
+    <div class="sw" style="background:var(--color-primary-dim)"><span class="name">primary-dim</span><span class="hex">#005ba1</span></div>
+    <div class="sw" style="background:var(--color-cyan);box-shadow:var(--glow-cyan)"><span class="name" style="color:#05050a">cyan</span><span class="hex" style="color:rgba(5,5,10,.7)">#00d4ff</span></div>
+    <div class="sw" style="background:var(--color-cyan-dim)"><span class="name" style="color:#05050a">cyan-dim</span><span class="hex" style="color:rgba(5,5,10,.7)">#0099cc</span></div>
+    <div class="sw" style="background:var(--color-cyan-glow);box-shadow:var(--glow-cyan-lg)"><span class="name" style="color:#05050a">cyan-glow</span><span class="hex" style="color:rgba(5,5,10,.7)">#00f5ff</span></div>
+  </div>
+</body>
+</html>

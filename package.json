@@ -1,0 +1,41 @@
+{
+  "name": "@jk-dot-com/phosphorous",
+  "version": "1.0.0",
+  "description": "Phosphorous — the CRT-cyberpunk design system for JK.com (Jayson Knight Consulting). Tokens, fonts, utility CSS, and React primitives. Single source of truth for jk.com and future JK properties.",
+  "keywords": ["design-system", "phosphorous", "jk", "cyberpunk", "css-tokens", "react"],
+  "author": "Jayson Knight <hello@jaysonknight.com> (https://jaysonknight.com)",
+  "license": "UNLICENSED",
+  "private": true,
+  "homepage": "https://github.com/jk-dot-com/jk.com-design-system",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jk-dot-com/jk.com-design-system.git"
+  },
+  "type": "module",
+  "exports": {
+    "./styles.css": "./styles.css",
+    "./tokens/*": "./tokens/*",
+    "./components/*": "./components/*",
+    "./assets/*": "./public/*"
+  },
+  "files": [
+    "styles.css",
+    "tokens/",
+    "components/",
+    "public/",
+    "guidelines/",
+    "ui_kits/",
+    "readme.md",
+    "SKILL.md",
+    "INTEGRATION.md"
+  ],
+  "sideEffects": ["*.css"],
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "peerDependenciesMeta": {
+    "react": { "optional": true },
+    "react-dom": { "optional": true }
+  }
+}

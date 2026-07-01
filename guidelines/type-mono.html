@@ -1,0 +1,22 @@
+<!-- @dsCard group="Type" viewport="700x180" name="Mono — Terminal" subtitle="JetBrains Mono, uppercased, wide tracking. Labels & readouts." -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin:0; background:var(--color-surface); padding:24px; display:flex; flex-direction:column; justify-content:center; gap:14px; }
+  .m { font-family:var(--font-mono); color:var(--color-cyan); }
+  .label { font-size:12px; letter-spacing:.15em; text-transform:uppercase; }
+  .chip { font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:var(--color-cyan-dim); }
+  .status { font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--color-text-dim); }
+  .sep { color:var(--color-text-ghost); opacity:.5; }
+  .lbl { font-family:var(--font-mono); font-size:9px; color:var(--color-text-ghost); letter-spacing:.1em; margin-left:12px; }
+</style>
+</head>
+<body>
+  <div class="m label">// SERVICES <span class="lbl">section label · widest .15em</span></div>
+  <div class="m chip">[ AZURE ARCHITECT ] <span class="lbl">bracket tag · mono .08em</span></div>
+  <div class="m status">ONLINE <span class="sep">//</span> LOCATION: CHARLOTTE, NC <span class="sep">//</span> STATUS: AVAILABLE</div>
+</body>
+</html>

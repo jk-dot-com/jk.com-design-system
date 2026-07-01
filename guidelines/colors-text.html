@@ -1,0 +1,29 @@
+<!-- @dsCard group="Colors" viewport="700x150" name="Text & Tints" subtitle="Three text weights + low-alpha cyan fills for cards and fields" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin:0; background:var(--color-surface); padding:20px; display:flex; gap:24px; align-items:stretch; }
+  .text-col { flex:1.1; display:flex; flex-direction:column; justify-content:center; gap:10px; }
+  .text-col div { font-family:var(--font-heading); font-size:18px; font-weight:600; }
+  .lbl { font-family:var(--font-mono); font-size:9px; color:var(--color-text-ghost); letter-spacing:.1em; margin-left:10px; text-transform:uppercase; }
+  .tints { flex:1; display:flex; flex-direction:column; gap:8px; }
+  .tint { flex:1; border-radius:var(--radius-sm); display:flex; align-items:center; padding:0 12px;
+          font-family:var(--font-mono); font-size:10px; color:var(--color-cyan); }
+</style>
+</head>
+<body>
+  <div class="text-col">
+    <div style="color:var(--color-text)">Primary text<span class="lbl">text · #e2e8f0</span></div>
+    <div style="color:var(--color-text-dim)">Secondary / body<span class="lbl">text-dim · #94a3b8</span></div>
+    <div style="color:var(--color-text-ghost)">Ghost / captions<span class="lbl">text-ghost · #475569</span></div>
+  </div>
+  <div class="tints">
+    <div class="tint" style="background:var(--tint-cyan-soft);border:1px solid var(--tint-cyan-line)">tint-cyan-soft · .04</div>
+    <div class="tint" style="background:var(--tint-cyan);border:1px solid var(--tint-cyan-line)">tint-cyan · .08</div>
+    <div class="tint" style="background:var(--tint-primary);border:1px solid rgba(0,120,212,.3);color:var(--color-primary)">tint-primary · .10</div>
+  </div>
+</body>
+</html>

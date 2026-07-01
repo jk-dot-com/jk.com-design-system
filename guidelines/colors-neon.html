@@ -1,0 +1,25 @@
+<!-- @dsCard group="Colors" viewport="700x150" name="Neon Pops" subtitle="Red CTAs, magenta shimmer, electric violet — used sparingly" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin:0; background:var(--color-bg); padding:20px; }
+  .row { display:flex; gap:12px; }
+  .sw { flex:1; height:96px; border-radius:var(--radius-lg);
+        display:flex; flex-direction:column; justify-content:flex-end; padding:10px; }
+  .sw .name { font-family:var(--font-mono); color:#fff; font-size:11px; letter-spacing:.04em; }
+  .sw .hex { font-family:var(--font-mono); color:rgba(255,255,255,.7); font-size:10px; letter-spacing:.05em; }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div class="sw" style="background:var(--color-red);box-shadow:var(--glow-red)"><span class="name">red</span><span class="hex">#ff2d55 · CTA</span></div>
+    <div class="sw" style="background:var(--color-red-dim)"><span class="name">red-dim</span><span class="hex">#cc2244</span></div>
+    <div class="sw" style="background:var(--color-pink);box-shadow:var(--glow-pink)"><span class="name">pink</span><span class="hex">#f72585 · shimmer</span></div>
+    <div class="sw" style="background:var(--color-purple);box-shadow:var(--glow-purple)"><span class="name">purple</span><span class="hex">#7b2ff7</span></div>
+    <div class="sw" style="background:var(--color-purple-dim)"><span class="name">purple-dim</span><span class="hex">#5a1db8</span></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!-- @dsCard group="Spacing" viewport="700x170" name="Radii & Borders" subtitle="Deliberately tight & technical — 3–8px, one pill for chips" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin:0; background:var(--color-surface); padding:24px; display:flex; gap:16px; align-items:center; }
+  .box { width:88px; height:88px; background:var(--color-card); border:1px solid var(--color-cyan-dim);
+         box-shadow:var(--glow-cyan-sm); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:4px; }
+  .t { font-family:var(--font-mono); font-size:9px; color:var(--color-cyan); letter-spacing:.04em; }
+  .v { font-family:var(--font-mono); font-size:9px; color:var(--color-text-ghost); }
+  .pill { border-radius:var(--radius-pill); width:120px; }
+</style>
+</head>
+<body>
+  <div class="box" style="border-radius:var(--radius-xs)"><span class="t">xs</span><span class="v">3px</span></div>
+  <div class="box" style="border-radius:var(--radius-sm)"><span class="t">sm</span><span class="v">4px</span></div>
+  <div class="box" style="border-radius:var(--radius-lg)"><span class="t">lg</span><span class="v">8px</span></div>
+  <div class="box" style="border-radius:var(--radius-xl)"><span class="t">xl</span><span class="v">12px</span></div>
+  <div class="box pill"><span class="t">pill</span><span class="v">9999px</span></div>
+</body>
+</html>
