@@ -1,0 +1,180 @@
+/* ============================================================
+   PHOSPHOROUS — Base resets, element defaults & utility classes
+   These utilities are the same primitives the live jk.com site
+   ships (.btn, .chip, .iridescent, .gradient-text …) so HTML
+   authored by hand matches React components 1:1.
+   ============================================================ */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font: var(--type-body);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: var(--weight-semibold);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--color-text);
+}
+
+code, pre, kbd, samp { font-family: var(--font-mono); }
+
+::selection { background: rgba(0, 212, 255, 0.25); color: var(--color-cyan-glow); }
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--color-surface); }
+::-webkit-scrollbar-thumb { background: var(--color-cyan-dim); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--color-cyan); }
+
+:focus-visible {
+  outline: 2px solid var(--color-cyan);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* --- Layout helpers --- */
+.section-container {
+  max-width: var(--max-content);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+@media (min-width: 768px) { .section-container { padding: 0 var(--gutter-lg); } }
+
+.section-pad { padding-top: var(--space-16); padding-bottom: var(--space-16); }
+@media (min-width: 1024px) { .section-pad { padding-top: var(--space-24); padding-bottom: var(--space-24); } }
+
+/* --- CRT background grid --- */
+.grid-overlay {
+  background-image:
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: var(--grid-size) var(--grid-size);
+}
+
+/* --- Glowing border (the workhorse card edge) --- */
+.glow-border {
+  border: 1px solid var(--color-cyan-dim);
+  box-shadow: var(--glow-cyan-sm);
+  transition: border-color var(--duration-normal) ease, box-shadow var(--duration-normal) ease;
+}
+.glow-border:hover { border-color: var(--color-cyan); box-shadow: var(--glow-cyan); }
+.glow-border.iridescent { border-color: transparent; }
+.glow-border.iridescent:hover { border-color: transparent; }
+
+/* --- Iridescent shimmer border (pink→purple streak, 95% invisible) --- */
+.iridescent { position: relative; overflow: hidden; }
+.iridescent::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: var(--gradient-shimmer);
+  transform: translateX(200%);
+  will-change: transform;
+  animation: phos-shimmer-streak 6s ease-in-out infinite;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  opacity: 0.9;
+  filter: drop-shadow(0 0 3px rgba(247,37,133,0.5));
+  pointer-events: none;
+}
+
+/* --- Phosphor text glow --- */
+.text-glow { text-shadow: var(--text-glow-cyan); }
+
+/* --- Animated gradient text --- */
+.gradient-text {
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* --- Chip / tag --- */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--color-border);
+  background: rgba(0, 212, 255, 0.05);
+  color: var(--color-cyan);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-mono);
+  text-transform: uppercase;
+}
+
+/* --- Buttons --- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-heading);
+  font-weight: var(--weight-semibold);
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all var(--duration-normal) ease;
+  text-decoration: none;
+  border: none;
+}
+.btn-primary {
+  background: var(--gradient-primary);
+  color: #fff;
+  box-shadow: var(--glow-primary);
+}
+.btn-primary:hover { box-shadow: var(--glow-cyan); transform: translateY(-1px); }
+.btn-outline {
+  background: transparent;
+  color: var(--color-cyan);
+  border: 1px solid var(--color-cyan-dim);
+  box-shadow: var(--glow-cyan-sm);
+}
+.btn-outline:hover { background: rgba(0, 212, 255, 0.08); border-color: var(--color-cyan); box-shadow: var(--glow-cyan); transform: translateY(-1px); }
+.btn-red {
+  background: var(--gradient-red);
+  color: #fff;
+  box-shadow: var(--glow-red);
+}
+.btn-red:hover { transform: translateY(-1px); box-shadow: 0 0 30px rgba(255, 45, 85, 0.5); }
+
+/* --- Section label divider --- */
+.section-label {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  color: var(--color-cyan);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+}
+.section-label::before { content: ''; flex: 0 0 2rem; height: 1px; background: var(--color-cyan); }
+.section-label::after  { content: ''; flex: 1; height: 1px; background: linear-gradient(to right, var(--color-cyan-dim), transparent); }
+
+/* --- Reduced motion --- */
+@media (prefers-reduced-motion: reduce) {
+  .iridescent::after { animation: none; }
+}
+html[data-shimmer-paused="true"] .iridescent::after { animation-play-state: paused; }

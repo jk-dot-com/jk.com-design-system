@@ -1,0 +1,13 @@
+/* ============================================================
+   PHOSPHOROUS — JK.com Design System
+   Single source of truth. Consumers link THIS file only.
+   A CRT-inspired cyberpunk language: phosphor glow, scanlines,
+   terminal typography, iridescent shimmer. Tagline: Unbounded Imagination.
+   ============================================================ */
+
+@import "./tokens/fonts.css";
+@import "./tokens/colors.css";
+@import "./tokens/typography.css";
+@import "./tokens/spacing.css";
+@import "./tokens/effects.css";
+@import "./tokens/base.css";

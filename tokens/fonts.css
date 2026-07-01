@@ -1,0 +1,9 @@
+/* ============================================================
+   PHOSPHOROUS — Webfonts
+   The brand ships two Google Fonts:
+   · Space Grotesk — headings, UI, buttons (geometric, technical)
+   · JetBrains Mono — terminal labels, code, status readouts
+   Body copy uses the platform system-ui stack (no webfont).
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap');

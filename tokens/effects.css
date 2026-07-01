@@ -1,0 +1,90 @@
+/* ============================================================
+   PHOSPHOROUS — Effects: glow shadows, motion, overlays
+   The aesthetic core. Glow is rendered as box-shadow / text-shadow,
+   never as a flat drop shadow. Motion is fast and mechanical
+   (CRT power-on, scanline sweep, shimmer streak, glitch).
+   ============================================================ */
+
+:root {
+  /* --- Glow shadows (neon bloom) --- */
+  --glow-cyan:     0 0 20px rgba(0, 212, 255, 0.40);
+  --glow-cyan-sm:  0 0 8px  rgba(0, 212, 255, 0.30);
+  --glow-cyan-lg:  0 0 30px rgba(0, 212, 255, 0.50);
+  --glow-red:      0 0 20px rgba(255, 45, 85, 0.40);
+  --glow-primary:  0 0 20px rgba(0, 120, 212, 0.40);
+  --glow-pink:     0 0 20px rgba(247, 37, 133, 0.40);
+  --glow-purple:   0 0 20px rgba(123, 47, 247, 0.40);
+
+  /* Depth shadows for floating chrome (modals, header) */
+  --shadow-panel:  0 0 0 1px rgba(0, 212, 255, 0.10),
+                   0 0 40px rgba(0, 212, 255, 0.08),
+                   0 24px 64px rgba(0, 0, 0, 0.60);
+  --shadow-header: 0 1px 20px rgba(0, 0, 0, 0.40);
+
+  /* Phosphor text glow (cyan persistence) */
+  --text-glow-cyan: 0 0 20px rgba(0, 212, 255, 0.60),
+                    0 0 40px rgba(0, 212, 255, 0.20);
+
+  /* --- Motion --- */
+  --duration-fast:   150ms; /* @kind other */
+  --duration-normal: 300ms; /* @kind other */
+  --duration-slow:   600ms; /* @kind other */
+  --ease-out:        cubic-bezier(0.23, 1, 0.32, 1); /* @kind other */
+  --ease-standard:   ease; /* @kind other */
+
+  /* --- Gradients --- */
+  --gradient-text:    linear-gradient(135deg, var(--color-cyan) 0%, var(--color-purple) 50%, var(--color-cyan-glow) 100%);
+  --gradient-primary: linear-gradient(135deg, var(--color-primary) 0%, var(--color-cyan-dim) 100%);
+  --gradient-red:     linear-gradient(135deg, var(--color-red-dim) 0%, var(--color-red) 100%);
+  --gradient-shimmer: linear-gradient(90deg, transparent 0%, rgba(247,37,133,0) 30%, #f72585 42%, #ff5fb0 50%, #7b2ff7 58%, rgba(123,47,247,0) 70%, transparent 100%); /* @kind color */
+
+  /* --- Background grid overlay (subtle CRT raster) --- */
+  --grid-line: rgba(0, 212, 255, 0.03);
+  --grid-size: 48px;
+}
+
+/* ============================================================
+   KEYFRAMES — shared motion vocabulary
+   ============================================================ */
+@keyframes phos-glitch-1 {
+  0%, 100% { clip-path: inset(0 0 95% 0); transform: translate(-2px, 0); }
+  25%      { clip-path: inset(30% 0 50% 0); transform: translate(2px, 0); }
+  50%      { clip-path: inset(65% 0 15% 0); transform: translate(-1px, 0); }
+  75%      { clip-path: inset(10% 0 75% 0); transform: translate(1px, 0); }
+}
+@keyframes phos-glitch-2 {
+  0%, 100% { clip-path: inset(80% 0 0 0); transform: translate(2px, 0); }
+  33%      { clip-path: inset(40% 0 40% 0); transform: translate(-2px, 0); }
+  66%      { clip-path: inset(0 0 80% 0); transform: translate(1px, 0); }
+}
+@keyframes phos-flicker {
+  0%, 99% { opacity: 1; }
+  33%     { opacity: 0.97; }
+  66%     { opacity: 0.99; }
+  100%    { opacity: 0.98; }
+}
+@keyframes phos-scan-line {
+  0%   { transform: translateY(-100%); }
+  100% { transform: translateY(100vh); }
+}
+@keyframes phos-fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes phos-pulse-glow {
+  0%, 100% { box-shadow: var(--glow-cyan-sm); }
+  50%      { box-shadow: var(--glow-cyan); }
+}
+@keyframes phos-shimmer-streak {
+  0%   { transform: translateX(200%); }
+  50%  { transform: translateX(-200%); }
+  100% { transform: translateX(200%); }
+}
+@keyframes phos-cursor-blink {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0; }
+}
+@keyframes phos-status-pulse {
+  0%, 100% { opacity: 1; box-shadow: 0 0 6px var(--color-cyan), 0 0 12px rgba(0, 212, 255, 0.4); }
+  50%      { opacity: 0.5; box-shadow: 0 0 3px var(--color-cyan); }
+}

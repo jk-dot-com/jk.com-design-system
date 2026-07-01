@@ -1,0 +1,66 @@
+/* ============================================================
+   PHOSPHOROUS — Color tokens
+   A CRT-inspired cyberpunk palette: near-black grounds,
+   electric cyan + Azure blue accents, neon red/pink/purple pops.
+   Named for the phosphor coating of CRT tubes.
+   ============================================================ */
+
+:root {
+  /* --- Grounds & surfaces --- */
+  --color-bg:          #05050a;   /* near-black with a blue cast — the void */
+  --color-surface:     #0d1117;   /* dark navy surface, alternating sections */
+  --color-card:        #111827;   /* card background */
+  --color-card-hover:  #161f2e;   /* card hover lift */
+  --color-border:      #1e2d3d;   /* subtle hairline border */
+  --color-border-glow: #0078d4;   /* border accent when lit */
+
+  /* --- Brand palette --- */
+  --color-primary:     #0078d4;   /* Microsoft Azure blue — structural accent */
+  --color-primary-dim: #005ba1;
+  --color-cyan:        #00d4ff;   /* electric cyan — the primary phosphor accent */
+  --color-cyan-dim:    #0099cc;
+  --color-cyan-glow:   #00f5ff;   /* hottest neon glow variant */
+  --color-red:         #ff2d55;   /* accent red — primary CTAs, alerts */
+  --color-red-dim:     #cc2244;
+  --color-pink:        #f72585;   /* neon magenta — shimmer + hover energy */
+  --color-pink-dim:    #c1006a;
+  --color-purple:      #7b2ff7;   /* electric violet — gradient partner */
+  --color-purple-dim:  #5a1db8;
+
+  /* --- Text --- */
+  --color-text:        #e2e8f0;   /* primary text */
+  --color-text-dim:    #94a3b8;   /* secondary / muted body text */
+  --color-text-ghost:  #475569;   /* disabled, captions, system labels */
+
+  /* ============================================================
+     SEMANTIC ALIASES — reach for these in product UI
+     ============================================================ */
+  --surface-page:      var(--color-bg);
+  --surface-section:   var(--color-surface);
+  --surface-card:      var(--color-card);
+  --surface-card-hover:var(--color-card-hover);
+
+  --text-strong:       var(--color-text);
+  --text-body:         var(--color-text-dim);
+  --text-muted:        var(--color-text-ghost);
+  --text-accent:       var(--color-cyan);
+  --text-link:         var(--color-cyan);
+  --text-link-hover:   var(--color-cyan-glow);
+
+  --accent:            var(--color-cyan);
+  --accent-structural: var(--color-primary);
+  --accent-danger:     var(--color-red);
+  --accent-magenta:    var(--color-pink);
+  --accent-violet:     var(--color-purple);
+
+  --border-hairline:   var(--color-border);
+  --border-lit:        var(--color-cyan-dim);
+
+  /* Tinted fills used across cards, tags, fields (cyan @ low alpha) */
+  --tint-cyan-soft:    rgba(0, 212, 255, 0.04);
+  --tint-cyan:         rgba(0, 212, 255, 0.08);
+  --tint-cyan-line:    rgba(0, 212, 255, 0.15);
+  --tint-cyan-edge:    rgba(0, 212, 255, 0.20);
+  --tint-primary:      rgba(0, 120, 212, 0.10);
+  --tint-red:          rgba(255, 45, 85, 0.08);
+}

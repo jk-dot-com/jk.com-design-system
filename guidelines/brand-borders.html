@@ -1,0 +1,25 @@
+<!-- @dsCard group="Brand" viewport="700x200" name="Glow & Iridescent Borders" subtitle="The workhorse card edge + the 95%-invisible shimmer streak" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin:0; background:var(--color-bg); padding:24px; display:flex; gap:18px; align-items:center; }
+  .demo { flex:1; height:130px; background:var(--color-card); border-radius:var(--radius-xl); padding:16px;
+          display:flex; flex-direction:column; justify-content:space-between; }
+  .ttl { font-family:var(--font-heading); font-size:15px; font-weight:600; color:var(--color-text); }
+  .sub { font-family:var(--font-mono); font-size:10px; color:var(--color-text-ghost); letter-spacing:.05em; }
+</style>
+</head>
+<body>
+  <div class="demo glow-border">
+    <span class="ttl">.glow-border</span>
+    <span class="sub">cyan stroke · glow-cyan-sm<br>brightens on hover</span>
+  </div>
+  <div class="demo glow-border iridescent">
+    <span class="ttl">.glow-border .iridescent</span>
+    <span class="sub">pink→purple streak sweeps<br>across the border, 8s loop</span>
+  </div>
+</body>
+</html>

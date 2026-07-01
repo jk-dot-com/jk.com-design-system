@@ -1,0 +1,25 @@
+<!-- @dsCard group="Brand" viewport="700x150" name="Section Label & Chips" subtitle="// BOOT-style label divider + mono chips and bracket tags" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin:0; background:var(--color-surface); padding:24px; display:flex; flex-direction:column; justify-content:center; gap:18px; }
+  .tags { display:flex; gap:10px; flex-wrap:wrap; }
+  .bracket { display:inline-flex; align-items:center; gap:.3rem; padding:.3rem .7rem; border-radius:3px;
+    border:1px solid rgba(0,212,255,.2); background:rgba(0,212,255,.04); color:var(--color-cyan-dim);
+    font-family:var(--font-mono); font-size:.72rem; letter-spacing:.08em; text-transform:uppercase; }
+  .bracket span { color:var(--color-cyan); opacity:.5; }
+</style>
+</head>
+<body>
+  <div class="section-label" style="margin:0">SERVICES</div>
+  <div class="tags">
+    <span class="chip">Azure</span>
+    <span class="chip">Cloudflare</span>
+    <span class="bracket"><span>[</span>RUST &amp; WASM<span>]</span></span>
+    <span class="bracket"><span>[</span>AI ENGINEER<span>]</span></span>
+  </div>
+</body>
+</html>
