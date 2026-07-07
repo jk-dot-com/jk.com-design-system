@@ -34,7 +34,7 @@ Jayson Knight is an enterprise cloud architect and AI engineer based in **Charlo
 - **Terminal diction:** system/telemetry framing everywhere — `// INITIALIZING...`, `ONLINE`, `STATUS: AVAILABLE`, `SYS: ONLINE // BUILD: … // NODE: CLT-01`, form submit reads `[ TRANSMIT ]` → `TRANSMITTING...` → `TRANSMISSION_RECEIVED`. Comments are prefixed `//`. Snake_case for "system" strings (`SCHEDULE_SESSION`, `TRANSMISSION_RECEIVED`).
 - **Headlines are punchy and short:** "THIS. IS. JK.com", "Work That Ships", "What I Build & Advise", "Enterprise-grade solutions. Human-scale delivery." Gradient-highlight one or two key words, not whole headlines.
 - **Body is concrete and technical:** real stacks, real numbers ("40% cost reduction", "200-node migration", ".NET Framework 4.8 → .NET 9"). No fluff, no buzzword soup. Bullets are scannable capability lists.
-- **Emoji:** used **only** as service-card icons (☁️ 🤖 🦀 🔶 🔒 🛠️ 🎨 🔗 🧪 ⚡ 🌐). Never in body copy, headings, or UI chrome. Everywhere else, "icons" are mono glyphs (`▸ ▾ ▴ • → █ ⌥ 𝕃`) or labels (`TEL`, `LOC`, `CAL`).
+- **Emoji:** not used anywhere in this system — body copy, headings, UI chrome, and service-card icons all use mono glyphs (`▸ ▾ ▴ • → █ ⌥ 𝕃`) or labels (`TEL`, `LOC`, `CAL`). New emoji usage requires explicit sign-off via a GitHub issue or PR before it's added anywhere in this system or its downstream consumers.
 - **CTAs:** confident imperatives — "Book Me", "View Services", "Talk To Me", "Book a Consultation", "[ TRANSMIT ]".
 
 ---
@@ -65,7 +65,7 @@ Jayson Knight is an enterprise cloud architect and AI engineer based in **Charlo
 
 Phosphorous is **deliberately glyph-first, not icon-library-driven.**
 
-- **Emoji** are the one sanctioned pictographic system, used **only** for service-card icons (☁️ AI 🤖, Rust 🦀, Cloudflare 🔶, security 🔒, advisory 🛠️, design 🎨, etc.). Treat them as content, not chrome.
+- **No emoji.** Service-card icons use a plain mono glyph (`▸`) rather than a pictograph. Emoji are not used anywhere in copy, docs, or UI chrome; adding any requires explicit sign-off via a GitHub issue or PR.
 - **Monospace Unicode glyphs** do the rest of the work as "icons": `▸` list markers, `▾`/`▴` expand/collapse, `•` bullets, `→` link arrows, `█` terminal cursor, `>` field prompt, `//` separators, and labels like `TEL` / `LOC` / `CAL` / `⌥` (GitHub) / `𝕃` (LinkedIn) standing in for social icons.
 - **The logo** is the only bespoke vector: `public/favicon.svg` — a glowing cyan **"JK" monogram** on a CRT grid inside corner brackets, with an outer glow filter. The wordmark is **JK** + gradient-text **.com**. Use it with `filter: drop-shadow(0 0 6px rgba(0,212,255,.6))`.
 - **There is no icon font and no SVG icon set.** If a future surface genuinely needs line icons, reach for a thin, technical, single-weight set (e.g. Lucide at ~1.5px stroke in cyan) and **flag it** — it's a net-new decision for this system, not an established pattern.
