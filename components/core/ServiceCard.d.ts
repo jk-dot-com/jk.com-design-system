@@ -1,11 +1,11 @@
 import React from 'react';
 
 /**
- * An offering tile — emoji icon, title, description, mono tech tags. Built on Card.
+ * An offering tile — mono-glyph icon, title, description, mono tech tags. Built on Card.
  * @startingPoint section="Core" subtitle="Service offering tile with icon + tech tags" viewport="700x260"
  */
 export interface ServiceCardProps extends React.HTMLAttributes<HTMLDivElement> {
-  /** Emoji or glyph icon shown top-left (the site uses emoji here). */
+  /** Mono-glyph icon shown top-left (see ICONOGRAPHY in readme.md — emoji require sign-off via issue/PR). */
   icon?: React.ReactNode;
   title: string;
   description: string;

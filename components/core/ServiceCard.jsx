@@ -2,7 +2,7 @@ import React from 'react';
 import { Card } from './Card.jsx';
 
 /**
- * ServiceCard — an offering tile: emoji icon, title, description, and mono tech tags.
+ * ServiceCard — an offering tile: mono-glyph icon, title, description, and mono tech tags.
  * Mirrors the Services grid on jk.com.
  */
 export function ServiceCard({ icon, title, description, tags = [], style = {}, ...props }) {

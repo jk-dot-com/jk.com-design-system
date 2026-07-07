@@ -1670,50 +1670,50 @@ function Services() {
   const [tab, setTab] = React.useState('technical');
   const [open, setOpen] = React.useState(null);
   const technical = [{
-    icon: '☁️',
+    icon: '▸',
     title: 'Azure Solutions Architecture',
     description: 'End-to-end Azure platform design: landing zones, AKS clusters, networking, identity (Entra ID), cost optimization, and FinOps. Fluent in ARM, Bicep, and Terraform.',
     tags: ['Azure', 'AKS', 'Bicep', 'FinOps'],
     bullets: ['Landing zone design & implementation', 'AKS cluster & node pool sizing', 'FinOps dashboards & budget alerts']
   }, {
-    icon: '🤖',
+    icon: '▸',
     title: 'AI Architecture & Agentic Systems',
     description: 'End-to-end agentic AI workflow design — multi-agent orchestration, MCP servers, AI gateways, and Agentic Development Environments. Built on Anthropic Claude, deployable to the Cloudflare edge.',
     tags: ['Claude', 'MCP', 'AI Gateway', 'Agents'],
     bullets: ['Multi-agent pipelines and tool-use orchestration', 'ADE design & implementation', 'MCP server and AI gateway deployment']
   }, {
-    icon: '🦀',
+    icon: '▸',
     title: 'Rust & WebAssembly',
     description: 'Deep Rust expertise across the full stack — standalone systems programming, server-side WASM with WASI, and client-side WASM in both Rust and TypeScript.',
     tags: ['Rust', 'WASM', 'WASI', 'TypeScript'],
     bullets: ['Standalone Rust systems: CLIs, daemons, libs', 'Server-side WASM components (WASI)', 'Client-side WASM for browser & Workers']
   }, {
-    icon: '🔶',
+    icon: '▸',
     title: 'Cloudflare Platform',
     description: 'Full Cloudflare stack: Workers, D1, R2, KV, Queues, Zero Trust / SASE, AI Gateway, MCP servers, and Vectorize. This entire site runs on Cloudflare.',
     tags: ['Workers', 'AI Gateway', 'Zero Trust'],
     bullets: ['Workers and Durable Objects architecture', 'AI Gateway and MCP at the edge', 'Zero Trust rollout with staged policy']
   }, {
-    icon: '🔒',
+    icon: '▸',
     title: 'Privacy & Security Engineering',
     description: 'Zero-trust architectures, DNS encryption (DoH/DoT), SASE deployment, security-first SDLC, and compliance-ready infrastructure design.',
     tags: ['Zero Trust', 'SASE', 'DNS', 'DoH/DoT'],
     bullets: ['Zero-trust policy modeling', 'Security hardening with compliance controls', 'Threat-informed architecture']
   }, {
-    icon: '🛠️',
+    icon: '▸',
     title: 'Technical Advisory & Fractional CTO',
     description: 'Senior technical leadership without the full-time overhead. I own the technical roadmap, make build-vs-buy calls, set engineering standards, then step back when you hire full-time.',
     tags: ['Fractional CTO', 'Advisory', 'Roadmap'],
     bullets: ['Technical roadmap ownership', 'Architecture reviews & modernization', 'Engineering standards & hiring bar']
   }];
   const creative = [{
-    icon: '🎨',
+    icon: '▸',
     title: 'Digital Media & Web Design',
     description: 'Modern, performant web experiences with a strong visual identity. From brand design to full-stack Astro/Svelte builds.',
     tags: ['Astro', 'Svelte', 'Design'],
     bullets: ['Brand-aligned design systems', 'Performance-first implementation', 'Conversion-focused UX']
   }, {
-    icon: '🔗',
+    icon: '▸',
     title: 'Microsoft 365 & Teams',
     description: 'M365 tenant architecture, Teams customization, SharePoint, and OneDrive deployment with governance best practices.',
     tags: ['M365', 'Teams', 'SharePoint'],

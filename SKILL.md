@@ -23,5 +23,5 @@ If the user invokes this skill without any other guidance, ask them what they wa
 - Dark always: `--color-bg` ground, `--color-card` surfaces, cyan glow for depth (never gray drop shadows).
 - Space Grotesk headings (tight, heavy), JetBrains Mono for UPPERCASE labels/chips/status, system-ui body.
 - Terminal voice: `//` comments, `ONLINE`/`STATUS:` readouts, `[ TRANSMIT ]`-style CTAs. First person, confident, dry.
-- Emoji only as service icons; everything else uses mono glyphs (`▸ ▾ • → █ >`).
+- No emoji anywhere — service icons and everything else use mono glyphs (`▸ ▾ • → █ >`). New emoji require sign-off via a GitHub issue or PR.
 - Use `.glow-border` + `.iridescent` for cards; respect `prefers-reduced-motion`.
