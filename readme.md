@@ -22,7 +22,7 @@ Explore those repos to recreate or extend designs with higher fidelity — the S
 
 ## Who & what
 
-Jayson Knight is an enterprise cloud architect and AI engineer based in **Charlotte, NC**, with 20+ years of software experience. Specialties: **Azure architecture, Cloudflare, .NET, Rust/WASM, TypeScript/Deno, agentic AI (Anthropic Claude, MCP, ADEs), and privacy/security**. Creator of **Bloqr**, an AI-native publishing platform. The site is a one-page scrolling consulting site + blog: hero → about → services → portfolio → contact.
+Jayson Knight is an enterprise cloud architect and AI engineer based in **Silicon Valley**, with 20+ years of software experience. Specialties: **Azure architecture, Cloudflare, .NET, Rust/WASM, TypeScript/Deno, agentic AI (Anthropic Claude, MCP, ADEs), and privacy/security**. Creator of **Bloqr**, an AI-native publishing platform. The site is a one-page scrolling consulting site + blog: hero → about → services → portfolio → contact.
 
 ---
 

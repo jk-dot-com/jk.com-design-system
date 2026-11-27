@@ -10,8 +10,8 @@ function Footer() {
           <div>
             <div style={{ fontFamily: 'var(--font-heading)', fontWeight: 900, fontSize: 'var(--text-2xl)', marginBottom: '.75rem' }}>JK<span className="gradient-text">.com</span></div>
             <p style={{ fontSize: '.875rem', marginBottom: '1rem', color: 'var(--color-text-ghost)', lineHeight: 1.7 }}>Jayson Knight — Enterprise Cloud Architect.<br />Azure · Cloudflare · .NET · Privacy</p>
-            <p style={{ fontSize: '.875rem', color: 'var(--color-text-ghost)', margin: 0 }}>Charlotte, North Carolina</p>
-            <a href="#" style={{ fontSize: '.875rem', color: 'var(--color-cyan-dim)', textDecoration: 'none' }}>704.408.2471</a>
+            <p style={{ fontSize: '.875rem', color: 'var(--color-text-ghost)', margin: 0 }}>Silicon Valley</p>
+            <a href="#" style={{ fontSize: '.875rem', color: 'var(--color-cyan-dim)', textDecoration: 'none' }}>628.377.2567</a>
           </div>
           <div>
             <h3 style={{ fontSize: 'var(--text-xs)', fontFamily: 'var(--font-mono)', textTransform: 'uppercase', letterSpacing: 'var(--tracking-widest)', marginBottom: '1rem', color: 'var(--color-text-ghost)' }}>Navigation</h3>
@@ -36,7 +36,7 @@ function Footer() {
         </div>
         <div className="kit-footer-bar" style={{ borderTop: '1px solid var(--color-border)', paddingTop: '2rem', fontSize: 'var(--text-xs)', color: 'var(--color-text-ghost)', fontFamily: 'var(--font-mono)' }}>
           <span>© {year} Jayson Knight · JK.com · All rights reserved</span>
-          <span style={{ color: 'var(--color-cyan-dim)' }}>Powered by Cloudflare Workers <span style={{ color: 'var(--color-border)' }}>·</span> Charlotte, NC</span>
+          <span style={{ color: 'var(--color-cyan-dim)' }}>Powered by Cloudflare Workers <span style={{ color: 'var(--color-border)' }}>·</span> Silicon Valley</span>
         </div>
       </div>
       <div className="kit-sys-status">
