@@ -25,7 +25,7 @@ function Hero() {
           <span className="kit-status-dot" />
           <span style={{ color: 'var(--color-cyan)', fontWeight: 600 }}>ONLINE</span>
           <span style={{ opacity: .3, fontSize: '.6rem' }}>//</span>
-          <span style={{ color: 'var(--color-text-dim)' }}>LOCATION: CHARLOTTE, NC</span>
+          <span style={{ color: 'var(--color-text-dim)' }}>LOCATION: SILICON VALLEY</span>
           <span style={{ opacity: .3, fontSize: '.6rem' }}>//</span>
           <span style={{ color: 'var(--color-text-dim)' }}>STATUS: AVAILABLE</span>
         </div>

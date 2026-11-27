@@ -909,14 +909,14 @@ function Footer() {
       color: 'var(--color-text-ghost)',
       margin: 0
     }
-  }, "Charlotte, North Carolina"), /*#__PURE__*/React.createElement("a", {
+  }, "Silicon Valley"), /*#__PURE__*/React.createElement("a", {
     href: "#",
     style: {
       fontSize: '.875rem',
       color: 'var(--color-cyan-dim)',
       textDecoration: 'none'
     }
-  }, "704.408.2471")), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h3", {
+  }, "628.377.2567")), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h3", {
     style: {
       fontSize: 'var(--text-xs)',
       fontFamily: 'var(--font-mono)',
@@ -1017,7 +1017,7 @@ function Footer() {
     style: {
       color: 'var(--color-border)'
     }
-  }, "\xB7"), " Charlotte, NC"))), /*#__PURE__*/React.createElement("div", {
+  }, "\xB7"), " Silicon Valley"))), /*#__PURE__*/React.createElement("div", {
     className: "kit-sys-status"
   }, /*#__PURE__*/React.createElement("span", {
     className: "kit-sys-dot"
@@ -1383,7 +1383,7 @@ function Hero() {
     style: {
       color: 'var(--color-text-dim)'
     }
-  }, "LOCATION: CHARLOTTE, NC"), /*#__PURE__*/React.createElement("span", {
+  }, "LOCATION: SILICON VALLEY"), /*#__PURE__*/React.createElement("span", {
     style: {
       opacity: .3,
       fontSize: '.6rem'

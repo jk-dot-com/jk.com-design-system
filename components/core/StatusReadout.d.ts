@@ -3,7 +3,7 @@ import React from 'react';
 export interface StatusReadoutProps extends React.HTMLAttributes<HTMLSpanElement> {
   /** ONLINE (cyan) vs OFFLINE flag. Default true. */
   online?: boolean;
-  /** "//"-separated mono segments after the flag, e.g. ['LOCATION: CHARLOTTE, NC', 'STATUS: AVAILABLE']. */
+  /** "//"-separated mono segments after the flag, e.g. ['LOCATION: SILICON VALLEY', 'STATUS: AVAILABLE']. */
   segments?: string[];
 }
 
