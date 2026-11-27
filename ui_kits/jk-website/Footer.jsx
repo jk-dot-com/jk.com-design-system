@@ -43,7 +43,7 @@ function Footer() {
         <span className="kit-sys-dot" />
         <span className="kit-sys-text">SYS: ONLINE</span><span className="kit-sys-sep">//</span>
         <span className="kit-sys-text">BUILD: LOCAL</span><span className="kit-sys-sep">//</span>
-        <span className="kit-sys-text">NODE: CLT-01</span><span className="kit-sys-sep">//</span>
+        <span className="kit-sys-text">NODE: SJC-01</span><span className="kit-sys-sep">//</span>
         <span className="kit-sys-text">STACK: ASTRO·SVELTE·CLOUDFLARE</span>
       </div>
     </footer>

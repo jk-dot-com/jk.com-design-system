@@ -1031,7 +1031,7 @@ function Footer() {
     className: "kit-sys-sep"
   }, "//"), /*#__PURE__*/React.createElement("span", {
     className: "kit-sys-text"
-  }, "NODE: CLT-01"), /*#__PURE__*/React.createElement("span", {
+  }, "NODE: SJC-01"), /*#__PURE__*/React.createElement("span", {
     className: "kit-sys-sep"
   }, "//"), /*#__PURE__*/React.createElement("span", {
     className: "kit-sys-text"
